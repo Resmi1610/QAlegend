@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+<listeners>
+<listener class-name="testscripts.Listners"></listener>
+	
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+     <!-- <class name="testscripts.Qalegenuserstest">
+      <methods>
+      <include name="createAUser"></include>
+       <include name="editAUser"></include>
+       <include name="deleteUser"></include>
+       
+      </methods>
+      </class>-->
+     <!-- <class name="testscripts.Qalegendrolestc">
+      <methods>
+       <include name="rolesList"></include>
+        <include name="addRole"></include>
+         <include name="deleteRole"></include>
+        </methods>
+      </class>-->
+      <class name="testscripts.Qalegendcontacts">
+      <methods>
+        <include name="createNewSupplier"></include>
+       <!-- <include name="addNewSalesCommissionAgents"></include>
+        <include name="createNewCustomer"></include>-->
+        </methods>
+      </class>
+      <!--<class name="testscripts.Qalegendproducts">
+      <methods>
+        <include name="addNewUnit"></include>
+      </methods>
+      </class>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
