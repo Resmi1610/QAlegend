@@ -52,4 +52,12 @@ public static void waitAttributeToBe(WebDriver driver,WebElement element,String 
 	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(Constants.EXPLICITWAIT));
 	wait.until(ExpectedConditions.attributeToBe(element, attribute,value));
 }
+
+public static void waitForElamenttobeInvisible(WebDriver driver,WebElement element)
+
+{
+
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(Constants.EXPLICITWAIT));//calling static variable from constant class
+    wait.until(ExpectedConditions.invisibilityOf(element));
+}
 }

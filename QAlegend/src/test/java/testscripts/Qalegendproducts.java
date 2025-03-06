@@ -1,5 +1,7 @@
 package testscripts;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
@@ -19,15 +21,15 @@ public class Qalegendproducts extends Baseclass
   	productsclass.addNewUnitButton();
   	String newUnitName=Fakerutilitiy.getFakeFirstName();
   	productsclass.addNewUnitName(newUnitName);
-  	Thread.sleep(3000);
+  	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
   	String newShortName=Fakerutilitiy.getFakerLastName();
-  	Thread.sleep(3000);
+  	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
   	productsclass.addNewUnitShortName(newShortName);
-  	Thread.sleep(3000);
+  	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
   	productsclass.allowDecimal();
-  	Thread.sleep(3000);
+  	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
   	productsclass.saveNewUnitButton();
   	
-  	
   }
+  
 }

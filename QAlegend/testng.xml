@@ -22,18 +22,18 @@
          <include name="deleteRole"></include>
         </methods>
       </class>-->
-      <class name="testscripts.Qalegendcontacts">
+     <!-- <class name="testscripts.Qalegendcontacts">
       <methods>
         <include name="createNewSupplier"></include>
-       <!-- <include name="addNewSalesCommissionAgents"></include>
-        <include name="createNewCustomer"></include>-->
+        <include name="addNewSalesCommissionAgents"></include>
+        <include name="createNewCustomer"></include>
         </methods>
-      </class>
-      <!--<class name="testscripts.Qalegendproducts">
+      </class>-->
+      <class name="testscripts.Qalegendproducts">
       <methods>
         <include name="addNewUnit"></include>
       </methods>
-      </class>-->
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
